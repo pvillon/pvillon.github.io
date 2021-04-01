@@ -1,0 +1,121 @@
+h1 {
+  font-family: arial;
+  font-size: 12pt;
+}
+
+h2 {
+  font-family: arial;
+  font-size: 12pt;
+}
+
+p {
+  font-family: arial;
+  font-size: 12pt;
+}
+
+div {
+  width: 680px;
+  padding: 50px;
+  box-sizing; border-box;
+}
+
+a {
+  color:#000000;
+}
+
+a:hover {
+  color:#1a75ff;
+}
+
+body {
+  background-color: #ffffe6;
+  padding:30px;
+}
+
+img {
+  max-width:100%;
+  margin-right:0;
+  margin-left: auto;
+  display:block;
+}
+
+ul {
+  font-family: arial;
+  color:black;
+  font-size:12pt;
+}
+
+dl {
+  font-family: arial;
+  color:black;
+  font-size:15pt;
+}
+
+.screen-reader-only {
+  position: absolute;
+  width: 1px;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+input {
+  font-family: arial;
+  background-color: floralwhite;
+  border: none;
+  color:red;
+   font-size: 150%
+}
+
+@media print, screen and (max-width: 960px) {
+
+  div.wrapper {
+    width:auto;
+    margin:0;
+  }
+
+  header, section, footer {
+    float:none;
+    position:static;
+    width:auto;
+  }
+
+  section {
+    border:1px solid #e5e5e5;
+    border-width:1px 0;
+    padding:20px 0;
+    margin:0 0 20px;
+  }
+}
+
+@media print, screen and (max-width: 720px) {
+  body {
+    word-wrap:break-word;
+  }
+
+  header {
+    padding:0;
+  }
+
+  header ul, header p.view {
+    position:static;
+  }
+
+  pre, code {
+    word-wrap:normal;
+  }
+}
+
+@media print, screen and (max-width: 480px) {
+  body {
+    padding:15px;
+  }
+
+  header ul {
+    width:99%;
+  }
+
+  header li, header ul li + li + li {
+    width:33%;
+  }
+}
