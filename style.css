@@ -15,6 +15,7 @@ p {
 
 div {
   width: 680px;
+  padding-top:50px;
   box-sizing; border-box;
 }
 
